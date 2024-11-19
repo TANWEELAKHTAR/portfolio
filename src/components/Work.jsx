@@ -1,9 +1,23 @@
 import React from "react";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useEffect } from "react";
 
 const Work = () => {
-  useEffect(() => {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".cover",
+      {
+        opacity: 0,
+        y: 100,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+      }
+    );
     const cover = document.querySelectorAll(".cover");
     const image = document.querySelectorAll(".image");
     
@@ -33,7 +47,12 @@ const Work = () => {
         }
       });
     });
-  }, []);
+    gsap.fromTo(
+      ".arrow",
+      { rotation: 45 },
+      { rotation: 0, duration: 0.8, ease: "power2.inOut", yoyo: true }
+    )
+  });
 
   return (
     <div className="col-span-1 lg:col-span-4 row-span-8 lg:row-span-4 bg-black text-white rounded-lg">
@@ -41,7 +60,7 @@ const Work = () => {
         <div className="cover w-full h-fit flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center cursor-pointer">
             <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
-            <img className="w-6 h-6" src="/ARROW.svg" alt="arrow" />
+            <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
@@ -52,7 +71,7 @@ const Work = () => {
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center cursor-pointer">
             <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
-            <img className="w-6 h-6" src="/ARROW.svg" alt="arrow" />
+            <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
@@ -63,7 +82,7 @@ const Work = () => {
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white ">
           <div className="w-full h-fit flex justify-between items-center cursor-pointer">
             <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
-            <img className="w-6 h-6" src="/ARROW.svg" alt="arrow" />
+            <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
