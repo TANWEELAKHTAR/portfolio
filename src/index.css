@@ -5,3 +5,8 @@
 ::-webkit-scrollbar{
   display: none;
 }
+
+@font-face {
+  font-family: Gilroy;
+  src: url('/Gilroy-Medium.ttf');
+}
