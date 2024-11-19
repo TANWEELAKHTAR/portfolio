@@ -4,20 +4,6 @@ import { useEffect } from "react";
 
 const Work = () => {
   useEffect(() => {
-    gsap.fromTo(
-      ".cover",
-      {
-        opacity: 0,
-        y: 100,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power2.out",
-      }
-    );
     const cover = document.querySelectorAll(".cover");
     const image = document.querySelectorAll(".image");
     
@@ -50,7 +36,7 @@ const Work = () => {
   }, []);
 
   return (
-    <div className="col-span-1 lg:col-span-4 row-span-8 lg:row-span-5 bg-black text-white rounded-lg">
+    <div className="col-span-1 lg:col-span-4 row-span-8 lg:row-span-4 bg-black text-white rounded-lg">
       <div className="wrapper w-full max-h-full flex flex-col items-start justify-evenly overflow-auto">
         <div className="cover w-full h-fit flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center cursor-pointer">

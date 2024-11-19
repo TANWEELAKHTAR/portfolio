@@ -13,3 +13,11 @@
 *{
   font-family: Gilroy;
 }
+@font-face {
+  font-family: Sperry;
+  src: url('/SP.woff2');
+}
+::selection{
+  background-color: #333;
+  color: #000;
+}
