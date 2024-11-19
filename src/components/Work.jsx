@@ -50,11 +50,11 @@ const Work = () => {
   }, []);
 
   return (
-    <div className="col-span-2 md:col-span-4 lg:col-span-4 row-span-8 bg-black text-white rounded-lg">
-      <div className="wrapper w-full max-h-[495px] flex flex-col items-start justify-evenly overflow-auto">
-        <div className="cover w-full h-fit flex flex-col justify-between items-start gap-4 p-6 border-b-white  border-b-2">
+    <div className="col-span-1 lg:col-span-4 row-span-8 lg:row-span-5 bg-black text-white rounded-lg">
+      <div className="wrapper w-full max-h-full flex flex-col items-start justify-evenly overflow-auto">
+        <div className="cover w-full h-fit flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center cursor-pointer">
-            <h1 className="text-2xl">Curate Entertainment</h1>
+            <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
             <img className="w-6 h-6" src="/ARROW.svg" alt="arrow" />
           </div>
           <img
@@ -63,9 +63,9 @@ const Work = () => {
             alt=""
           />
         </div>
-        <div className="cover w-full flex flex-col justify-between items-start gap-4 p-6 border-b-white  border-b-2">
+        <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center cursor-pointer">
-            <h1 className="text-2xl">Curate Entertainment</h1>
+            <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
             <img className="w-6 h-6" src="/ARROW.svg" alt="arrow" />
           </div>
           <img
@@ -74,9 +74,9 @@ const Work = () => {
             alt=""
           />
         </div>
-        <div className="cover w-full flex flex-col justify-between items-start gap-4 p-6 border-b-white ">
+        <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white ">
           <div className="w-full h-fit flex justify-between items-center cursor-pointer">
-            <h1 className="text-2xl">Curate Entertainment</h1>
+            <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
             <img className="w-6 h-6" src="/ARROW.svg" alt="arrow" />
           </div>
           <img
