@@ -20,8 +20,8 @@ const Work = () => {
     );
     const cover = document.querySelectorAll(".cover");
     const image = document.querySelectorAll(".image");
-    
-    let currentOpenIndex = 0;  
+
+    let currentOpenIndex = 0;
 
     gsap.to(image[0], {
       height: "14rem",
@@ -51,16 +51,18 @@ const Work = () => {
       ".arrow",
       { rotation: 45 },
       { rotation: 0, duration: 0.8, ease: "power2.inOut", yoyo: true }
-    )
+    );
   });
 
   return (
     <div className="col-span-1 lg:col-span-4 row-span-8 lg:row-span-4 bg-black text-white rounded-lg">
       <div className="wrapper w-full max-h-full flex flex-col items-start justify-evenly overflow-auto">
         <div className="cover w-full h-fit flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
-          <div className="w-full h-fit flex justify-between items-center cursor-pointer">
+          <div className="w-full h-fit flex justify-between items-center">
             <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
-            <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+            <a href="" className="cursor-pointer">
+              <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+            </a>
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
@@ -69,9 +71,11 @@ const Work = () => {
           />
         </div>
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
-          <div className="w-full h-fit flex justify-between items-center cursor-pointer">
+          <div className="w-full h-fit flex justify-between items-center">
             <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
-            <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+            <a href="" className="cursor-pointer">
+              <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+            </a>
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
@@ -80,9 +84,11 @@ const Work = () => {
           />
         </div>
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white ">
-          <div className="w-full h-fit flex justify-between items-center cursor-pointer">
+          <div className="w-full h-fit flex justify-between items-center">
             <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
-            <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+            <a href="" className="cursor-pointer">
+              <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+            </a>
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
