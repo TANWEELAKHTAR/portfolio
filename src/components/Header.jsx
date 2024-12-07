@@ -36,7 +36,6 @@ const Header = () => {
       }
     )
   })
-
   const handleMenuToggle = () => {
     setIsOpen(!isOpen)
     
@@ -79,7 +78,16 @@ const Header = () => {
       })
     }
   }
-
+  const handleClosing = () => {
+    setIsOpen(false)
+    gsap.to(".mobile-menu", {
+      x: "100%",
+      opacity: 0,
+      duration: 0.5,
+      ease: "power2.inout"
+    })
+  }  
+  
   return (
     <div className='col-span-1 lg:col-span-12 row-span-1 bg-black text-white rounded-lg overflow-hidden'>
       <nav className='w-full h-full flex items-center justify-between p-6'>
@@ -102,10 +110,10 @@ const Header = () => {
         </div>
 
         <div className={`mobile-menu fixed top-0 right-0 z-10 h-screen w-full bg-black/95 flex flex-col items-center justify-center gap-8 md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-          <Link to="/" className='text-xl font-thin uppercase'>Home</Link>
-          <Link to="/project" className='text-xl font-thin uppercase'>Projects</Link>
-          <Link to="/about" className='text-xl font-thin uppercase'>About</Link>
-          <Link to="/contact" className='text-xl font-thin uppercase'>Contact</Link>
+          <Link onClick={handleClosing} to="/" className='text-xl font-thin uppercase'>Home</Link>
+          <Link onClick={handleClosing} to="/projects" className='text-xl font-thin uppercase'>Projects</Link>
+          <Link onClick={handleClosing} to="/about" className='text-xl font-thin uppercase'>About</Link>
+          <Link onClick={handleClosing} to="/contact" className='text-xl font-thin uppercase'>Contact</Link>
         </div>
       </nav>
     </div>
