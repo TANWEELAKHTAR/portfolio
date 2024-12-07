@@ -104,7 +104,7 @@ const Header = () => {
 
         <div className="desktop-links hidden md:flex gap-6">
           <Link to="/" className='text-sm font-thin uppercase hover:text-gray-300 transition-colors'>Home</Link>
-          <Link to="/project" className='text-sm font-thin uppercase hover:text-gray-300 transition-colors'>Projects</Link>
+          <Link to="/projects" className='text-sm font-thin uppercase hover:text-gray-300 transition-colors'>Projects</Link>
           <Link to="/about" className='text-sm font-thin uppercase hover:text-gray-300 transition-colors'>About</Link>
           <Link to="/contact" className='text-sm font-thin uppercase hover:text-gray-300 transition-colors'>Contact</Link>
         </div>
