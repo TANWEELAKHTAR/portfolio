@@ -8,14 +8,14 @@
 
 @font-face {
   font-family: Gilroy;
-  src: url('/Gilroy-Medium.ttf');
+  src: url('/fonts/Gilroy-Medium.ttf');
 }
 *{
   font-family: Gilroy;
 }
 @font-face {
   font-family: Sperry;
-  src: url('/SP.woff2');
+  src: url('/fonts/SP.woff2');
 }
 ::selection{
   background-color: #333;

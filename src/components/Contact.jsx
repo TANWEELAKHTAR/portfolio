@@ -33,7 +33,7 @@ const Contact = () => {
             <p className='text-xs font-thin capitalize'>Have some</p>
             <p className='text-xs font-thin capitalize'>questions?</p>
           </div>
-          <Link to="/contact" className="cursor-pointer"><img className='w-6 h-6 arrow' src="/ARROW.svg" alt="arrow" /></Link>
+          <Link to="/contact" className="cursor-pointer"><img className='w-6 h-6 arrow' src="/images/ARROW.svg" alt="arrow" /></Link>
         </div>
         <div className="bottom">
           <h1 className='text-5xl md:text-7xl capitalize font-light font-[Sperry] tracking-wide'>Contact me</h1>

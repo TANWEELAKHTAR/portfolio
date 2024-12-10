@@ -59,40 +59,40 @@ const Work = () => {
       <div className="wrapper w-full max-h-full flex flex-col items-start justify-evenly overflow-auto">
         <div className="cover w-full h-fit flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center">
-            <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
+            <h1 className="md:text-2xl text-xl">Edicruit</h1>
             <a href="" className="cursor-pointer">
-              <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+              <img className="w-6 h-6 arrow" src="/images/ARROW.svg" alt="arrow" />
             </a>
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
-            src="/curate-entertainment.webp"
+            src="/images/Edicruit.png"
             alt=""
           />
         </div>
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center">
-            <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
+            <h1 className="md:text-2xl text-xl">Employee Management System</h1>
             <a href="" className="cursor-pointer">
-              <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+              <img className="w-6 h-6 arrow" src="/images/ARROW.svg" alt="arrow" />
             </a>
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
-            src="/curate-entertainment.webp"
+            src="/images/EMS.png"
             alt=""
           />
         </div>
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white ">
           <div className="w-full h-fit flex justify-between items-center">
-            <h1 className="md:text-2xl text-xl">Curate Entertainment</h1>
+            <h1 className="md:text-2xl text-xl">Cyberfiction</h1>
             <a href="" className="cursor-pointer">
-              <img className="w-6 h-6 arrow" src="/ARROW.svg" alt="arrow" />
+              <img className="w-6 h-6 arrow" src="/images/ARROW.svg" alt="arrow" />
             </a>
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
-            src="/curate-entertainment.webp"
+            src="/images/cyberfiction.png"
             alt=""
           />
         </div>

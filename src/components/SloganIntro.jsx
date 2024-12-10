@@ -28,7 +28,7 @@ const SloganIntro = () => {
       <div className="w-full h-full flex flex-col justify-between items-end relative gap-4 p-6">
         <img
           className="hidden md:block md:w-14 md:h-14 lg:w-16 lg:h-16 flower-icon"
-          src="/FLOWER ICON.svg"
+          src="/images/FLOWER ICON.svg"
           alt=""
         />
         <h1 className="text-3xl md:text-5xl font-semibold self-start leading-tight tracking-normal intro-text">I'm TANWEEL <span className="font-[Sperry]">AKHTAR</span>.

@@ -5,48 +5,99 @@ import gsap from 'gsap'
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Website",
-    description: "A full-stack e-commerce platform built with React and Node.js",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
-    link: "https://github.com/username/ecommerce"
+    title: "Edicruit",
+    description: "At EDICRUIT, we provide tailored strategies that unlock growth, optimize operations, and deliver measurable results.",
+    tech: ["React", "Tailwind", "GSAP", "web3 Forms"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/Edicruit.png"
   },
   {
-    id: 2, 
-    title: "3D Portfolio",
-    description: "Interactive 3D portfolio website using Three.js and React",
-    tech: ["React", "Three.js", "GSAP", "Tailwind CSS"],
-    link: "https://github.com/username/portfolio"
+    id: 2,
+    title: "Employee Management System",
+    description: "Comprehensive HR solution for managing employee data, attendance, and performance tracking",
+    tech: ["React", "Tailwind", "Local Storage"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/EMS.png"
   },
   {
-    id: 3,
-    title: "Weather Dashboard",
-    description: "Weather forecasting app with interactive maps and real-time updates",
-    tech: ["React", "OpenWeather API", "Leaflet", "Tailwind CSS"],
-    link: "https://github.com/username/weather-app"
-  }
-  ,
+    id: 3, 
+    title: "Cyberfiction",
+    description: "Futuristic 3D web experience showcasing cyberpunk-themed interactive animations",
+    tech: ["HTML", "CSS", "JavaScript", "GSAP"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/cyberfiction.png"
+  },
   {
     id: 4,
-    title: "Task Manager",
-    description: "Collaborative project management tool with drag-and-drop interface",
-    tech: ["React", "Redux", "Node.js", "MongoDB"],
-    link: "https://github.com/username/task-manager"
-  }
-  ,
+    title: "Zajno",
+    description: "Creative agency portfolio with stunning animations and interactive user experience",
+    tech: ["HTML", "CSS", "JavaScript", "GSAP", "Three.js" ],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/zajno.png"
+  },
   {
     id: 5,
-    title: "Recipe Finder",
-    description: "Recipe search and meal planning application with nutrition tracking",
-    tech: ["React", "Spoonacular API", "Firebase", "Material UI"],
-    link: "https://github.com/username/recipe-finder"
-  }
-  ,
+    title: "Two Good GO",
+    description: "Social enterprise website with smooth animations and responsive design",
+    tech: ["HTML", "CSS", "JavaScript", "GSAP" ],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/two good co.png"
+  },
   {
     id: 6,
-    title: "Movie Database",
-    description: "Film and TV show discovery platform with personalized recommendations",
-    tech: ["React", "TMDB API", "Styled Components", "Auth0"],
-    link: "https://github.com/username/movie-db"
+    title: "Planets",
+    description: "Interactive 3D solar system explorer with detailed planet information and animations",
+    tech: ["HTML", "Tailwind", "JavaScript", "GSAP", "Three.js" ],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/earth.png"
+  },
+  {
+    id: 7,
+    title: "Inovact Talent Search",
+    description: "AI-powered talent matching platform connecting companies with skilled professionals",
+    tech: ["React", "Tailwind", "GSAP"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/inovact.png"
+  },
+  {
+    id: 8,
+    title: "Friend Request",
+    description: "A social networking application allowing users to connect by sending and accepting friend requests.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/friend request.png"
+  },
+  {
+    id: 9,
+    title: "Blobmixer",
+    description: "Creative tool for generating and mixing unique blob animations with 3D effects",
+    tech: ["HTML", "Tailwind", "javascript", "GSAP", "three.js"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/blobmixer.png"
+  },
+  {
+    id: 10,
+    title: "Deveb.co",
+    description: "Web development agency portfolio with modern design and interactive elements",
+    tech: ["HTML", "tailwind", "javascript", "GSAP", "three.js"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/deveb.co.png"
+  },
+  {
+    id: 11,
+    title: "Furni",
+    description: "Furniture e-commerce website with clean design and smooth user experience",
+    tech: ["HTML", "CSS"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/furni.png"
+  },
+  {
+    id: 12,
+    title: "FAD",
+    description: "Fashion and design portfolio showcasing creative works with elegant animations",
+    tech: ["HTML", "CSS", "javascript"],
+    link: "https://github.com/TANWEELAKHTAR/",
+    image: "/images/fad.png"
   }
 ]
 
@@ -69,20 +120,22 @@ const ProjectsPage = () => {
 
   return (
     <div className="col-span-1 lg:col-span-12 row-span-9 bg-black text-white rounded-lg">
-      <div className="p-8 max-w-7xl mx-auto max-h-[90vh] overflow-scroll">
+    <div className="p-6 max-w-7xl mx-auto h-[calc(150vh-100px)] lg:h-full overflow-y-scroll">
         <h1 className="text-5xl font-bold mb-12">My <span className="font-[Sperry]">Projects</span></h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="project-card bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-colors">
-              <div className="h-48 mb-4 bg-white/10 rounded-lg"></div>
+              <div className="h-48 mb-4 bg-white/10 rounded-lg">
+              <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-lg" />
+              </div>
               
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-gray-400 mb-4">{project.description}</p>
               
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, index) => (
-                  <span key={index} className="text-xs bg-white/10 px-2 py-1 rounded">
+                  <span key={index} className="text-xs bg-white/10 px-2 py-1 rounded capitalize">
                     {tech}
                   </span>
                 ))}
