@@ -66,7 +66,7 @@ const Work = () => {
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
-            src="/images/Edicruit.png"
+            src="/images/edicruit.png"
             alt=""
           />
         </div>

@@ -9,7 +9,7 @@ const projects = [
     description: "At EDICRUIT, we provide tailored strategies that unlock growth, optimize operations, and deliver measurable results.",
     tech: ["React", "Tailwind", "GSAP", "web3 Forms"],
     link: "https://github.com/TANWEELAKHTAR/",
-    image: "/images/Edicruit.png"
+    image: "/images/edicruit.png"
   },
   {
     id: 2,

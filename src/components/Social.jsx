@@ -23,9 +23,9 @@ const Social = () => {
   return (
     <div className='col-span-1 xl:col-span-4 row-span-1 bg-black text-white rounded-lg'>
       <div className="w-full h-full flex justify-evenly items-center p-4 lg:p-0">
-        <a className='text-xs lg:text-sm font-thin uppercase social-link' href="#">instagram</a>
-        <a className='text-xs lg:text-sm font-thin uppercase social-link' href="#">linkedin</a>
-        <a className='text-xs lg:text-sm font-thin uppercase social-link' href="#">github</a>
+        <a className='text-xs lg:text-sm font-thin uppercase social-link' href="https://www.instagram.com/_akhtartanweel/">instagram</a>
+        <a className='text-xs lg:text-sm font-thin uppercase social-link' href="https://www.linkedin.com/in/tanweel-akhtar-5a991b251/">linkedin</a>
+        <a className='text-xs lg:text-sm font-thin uppercase social-link' href="https://github.com/TANWEELAKHTAR">github</a>
       </div>
     </div>
   )
