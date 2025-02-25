@@ -24,7 +24,7 @@ const projects = [
     title: "Cyberfiction",
     description: "Futuristic 3D web experience showcasing cyberpunk-themed interactive animations",
     tech: ["HTML", "CSS", "JavaScript", "GSAP"],
-    link: "cyberfication.netlify.app",
+    link: "https://cyberfication.netlify.app",
     image: "/images/cyberfiction.png"
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     title: "Zajno",
     description: "Creative agency portfolio with stunning animations and interactive user experience",
     tech: ["HTML", "CSS", "JavaScript", "GSAP", "Three.js" ],
-    link: "threejs-zajno.netlify.app",
+    link: "https://threejs-zajno.netlify.app",
     image: "/images/zajno.png"
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     title: "Inovact Talent Search",
     description: "AI-powered talent matching platform connecting companies with skilled professionals",
     tech: ["React", "Tailwind", "GSAP"],
-    link: "inovacttalentlaunch.netlify.app",
+    link: "https://inovacttalentlaunch.netlify.app",
     image: "/images/inovact.png"
   },
   {
@@ -64,7 +64,7 @@ const projects = [
     title: "Friend Request",
     description: "A social networking application allowing users to connect by sending and accepting friend requests.",
     tech: ["HTML", "CSS", "JavaScript"],
-    link: "letsgetfriends.netlify.app",
+    link: "https://letsgetfriends.netlify.app",
     image: "/images/friend request.png"
   },
   {
@@ -80,7 +80,7 @@ const projects = [
     title: "Deveb.co",
     description: "Web development agency portfolio with modern design and interactive elements",
     tech: ["HTML", "tailwind", "javascript", "GSAP", "three.js"],
-    link: "threejs-deweb.netlify.app",
+    link: "https://threejs-deweb.netlify.app",
     image: "/images/deveb.co.png"
   },
   {
