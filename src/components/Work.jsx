@@ -60,7 +60,7 @@ const Work = () => {
         <div className="cover w-full h-fit flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center">
             <h1 className="md:text-2xl text-xl">Edicruit</h1>
-            <a href="" className="cursor-pointer">
+            <a href="https://edicruit.netlify.app/" className="cursor-pointer">
               <img className="w-6 h-6 arrow" src="/images/ARROW.svg" alt="arrow" />
             </a>
           </div>
@@ -73,7 +73,7 @@ const Work = () => {
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center">
             <h1 className="md:text-2xl text-xl">Employee Management System</h1>
-            <a href="" className="cursor-pointer">
+            <a href="https://github.com/TANWEELAKHTAR/employee-management-system" className="cursor-pointer">
               <img className="w-6 h-6 arrow" src="/images/ARROW.svg" alt="arrow" />
             </a>
           </div>
@@ -86,7 +86,7 @@ const Work = () => {
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white ">
           <div className="w-full h-fit flex justify-between items-center">
             <h1 className="md:text-2xl text-xl">Cyberfiction</h1>
-            <a href="" className="cursor-pointer">
+            <a href="cyberfication.netlify.app" className="cursor-pointer">
               <img className="w-6 h-6 arrow" src="/images/ARROW.svg" alt="arrow" />
             </a>
           </div>
