@@ -138,7 +138,7 @@ const ContactPage = () => {
               </p>
               <p className="text-sm lg:text-xl font-light">
                 For more info, here's my{" "}
-                <a href="" className="underline">
+                <a href="/tanweel resume.pdf" download={"Tanweel_Resume.pdf"} className="underline">
                   resume
                 </a>
               </p>
