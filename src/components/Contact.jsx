@@ -36,7 +36,14 @@ const Contact = () => {
           <Link to="/contact" className="cursor-pointer"><img className='w-6 h-6 arrow' src="/images/ARROW.svg" alt="arrow" /></Link>
         </div>
         <div className="bottom">
-          <h1 className='text-5xl md:text-7xl capitalize font-light font-[Sperry] tracking-wide'>Contact me</h1>
+          <h1 style={{
+            backgroundImage:
+              "linear-gradient(120deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 60%)",
+            backgroundSize: "200% 100%",
+            WebkitBackgroundClip: "text",
+            animationDuration: 1,
+          }}
+          className="text-4xl md:text-7xl font-semibold leading-tight tracking-normal intro-text text-[#b5b5b581] bg-clip-text inline-block animate-shine font-[Sperry]">Contact me</h1>
         </div>
       </div>
     </div>
