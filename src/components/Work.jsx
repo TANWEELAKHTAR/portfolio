@@ -71,14 +71,14 @@ const Work = () => {
         </div>
         <div className="cover w-full flex flex-col justify-between items-start gap-4 p-4 xl:p-6 border-b-white  border-b-2">
           <div className="w-full h-fit flex justify-between items-center">
-            <h1 className="md:text-2xl text-xl">Employee Management System</h1>
-            <a href="https://github.com/TANWEELAKHTAR/employee-management-system" className="cursor-pointer">
+            <h1 className="md:text-2xl text-xl">Adidhi</h1>
+            <a href="https://adidhi.com" className="cursor-pointer">
               <img className="w-6 h-6 arrow" src="/images/ARROW.svg" alt="arrow" />
             </a>
           </div>
           <img
             className="image w-full h-0 object-cover rounded-lg cursor-pointer"
-            src="/images/EMS.png"
+            src="/images/adidhi.png"
             alt=""
           />
         </div>

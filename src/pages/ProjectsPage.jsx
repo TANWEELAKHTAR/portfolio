@@ -1,8 +1,16 @@
-import React from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
 const projects = [
+  
+  {
+    id: 13,
+    title: "Adidhi",
+    description: "India's #1 App for Hotel & Restaurant Jobs Connecting job seekers with the right opportunities in the hotel and restaurant industry.",
+    tech: ["Next.js", "Tailwind"],
+    link: "https://adidhi.com/",
+    image: "/images/adidhi.png"
+  },
   {
     id: 12,
     title: "Edicruit",
@@ -13,6 +21,14 @@ const projects = [
   },
   {
     id: 11,
+    title: "AstroCode",
+    description: "AstroCode, where AI meets innovation to revolutionize the way you write and review code. Enhance quality, fix bugs, and optimize performance—faster than ever before.",
+    tech: ["Next.js", "Tailwind","Clerk"],
+    link: "https://github.com/TANWEELAKHTAR/AstroCode",
+    image: "/images/astrocode.png"
+  },
+  {
+    id: 10,
     title: "Employee Management System",
     description: "Comprehensive HR solution for managing employee data, attendance, and performance tracking",
     tech: ["React", "Tailwind", "Local Storage"],
@@ -20,7 +36,7 @@ const projects = [
     image: "/images/EMS.png"
   },
   {
-    id: 10, 
+    id: 9, 
     title: "Cyberfiction",
     description: "Futuristic 3D web experience showcasing cyberpunk-themed interactive animations",
     tech: ["HTML", "CSS", "JavaScript", "GSAP"],
@@ -28,20 +44,12 @@ const projects = [
     image: "/images/cyberfiction.png"
   },
   {
-    id: 9,
+    id: 8,
     title: "Zajno",
     description: "Creative agency portfolio with stunning animations and interactive user experience",
     tech: ["HTML", "CSS", "JavaScript", "GSAP", "Three.js" ],
     link: "https://threejs-zajno.netlify.app",
     image: "/images/zajno.png"
-  },
-  {
-    id: 8,
-    title: "Two Good GO",
-    description: "Social enterprise website with smooth animations and responsive design",
-    tech: ["HTML", "CSS", "JavaScript", "GSAP" ],
-    link: "https://github.com/TANWEELAKHTAR/",
-    image: "/images/two good co.png"
   },
   {
     id: 7,
@@ -127,7 +135,7 @@ const ProjectsPage = () => {
           {projects.map((project) => (
             <div key={project.id} className="project-card bg-white/5 rounded-lg p-6 hover:bg-white/10 transition-colors">
               <div className="h-48 mb-4 bg-white/10 rounded-lg">
-              <img src={project.image} alt={project.title} className="w-full h-full object-fit rounded-lg" />
+              <img loading='lazy' src={project.image} alt={project.title} className="w-full h-full object-fit rounded-lg" />
               </div>
               
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
